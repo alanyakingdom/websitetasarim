@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CodeElite - 2025 Premium Robotik & AI kursları. Uygulamalı projeler, mentor desteği ve uluslararası akreditasyon." />
+    <title>CodeElite | 2025 Premium Robotik & AI Kursları</title>
+
+    <!-- Fonts & icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Your stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Helpful: improve mobile scroll offset for anchored links -->
+    <style>html{scroll-padding-top:110px}</style>
+</head>
+<body class="bg-light-gray" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="120">
+
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container py-2">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-dark" href="#">
+                <i class="fas fa-terminal text-accent me-1 logo-icon" aria-hidden="true"></i>
+                <span class="brand-word">CodeElite</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu" aria-controls="anaMenu" aria-expanded="false" aria-label="Menüyü aç">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="anaMenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nedenbiz">Neden Biz?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kurslar">Modüller</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#avantajlar">Elite Farkı</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-accent px-4 py-2 hero-cta-btn" data-bs-toggle="modal" data-bs-target="#fiyatModal" aria-haspopup="dialog">
+                            <i class="fas fa-lock-open me-1"></i> Erişim Sağla
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <header id="hero" class="hero-slider">
+
+    <!-- SLIDE RADIOS -->
+    <input type="radio" name="h" id="h1" checked>
+    <input type="radio" name="h" id="h2">
+    <input type="radio" name="h" id="h3">
+
+    <!-- SLIDES -->
+    <div class="slides">
+        <div class="slide" style="background-image:url('assets/hero1.jpg');"></div>
+        <div class="slide" style="background-image:url('assets/hero2.jpg');"></div>
+        <div class="slide" style="background-image:url('assets/hero3.jpg');"></div>
+    </div>
+
+    <!-- CONTENT (senin yazıların dokunulmadı) -->
+    <div class="hero-content container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+                <p class="text-accent fw-bold mb-2 lead pulse-text">2025 TEKNOLOJİ EĞİTİMİ</p>
+                <h1 class="display-1 fw-bolder mb-4 hero-heading">
+                    Çocuğunuzun Potansiyelini <span class="text-accent">Kodlarla Yükseltin</span>
+                </h1>
+                <p class="lead mb-4 hero-sub" style="color: white !important; font-weight: 700;">
+    Sadece kodlama değil; problem çözme, yaratıcılık ve geleceğin otonom sistemlerini tasarlama becerisi.
+</p>
+
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="#kurslar" class="btn btn-primary btn-xl shadow-lg cta-main">
+                        <i class="fas fa-rocket me-2"></i> Modülleri İncele
+                    </a>
+                    <button class="btn btn-outline-accent btn-xl" data-bs-toggle="modal" data-bs-target="#fiyatModal">
+                        <i class="fas fa-gem me-2"></i> Fırsatları Öğren
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARROWS -->
+    <label class="arrow left h1-prev" for="h3"><i class="fas fa-chevron-left"></i></label>
+    <label class="arrow right h1-next" for="h2"><i class="fas fa-chevron-right"></i></label>
+
+    <label class="arrow left h2-prev" for="h1"><i class="fas fa-chevron-left"></i></label>
+    <label class="arrow right h2-next" for="h3"><i class="fas fa-chevron-right"></i></label>
+
+    <label class="arrow left h3-prev" for="h2"><i class="fas fa-chevron-left"></i></label>
+    <label class="arrow right h3-next" for="h1"><i class="fas fa-chevron-right"></i></label>
+
+</header>
+
+    <!-- NEDEN BIZ -->
+    <section id="nedenbiz" class="container py-5">
+        <div class="text-center mb-5">
+            <span class="text-accent fw-bold small text-uppercase">Bizi Tercih Etme Nedenleriniz</span>
+            <h2 class="fw-bold display-6 mb-2 mt-2">Neden CodeElite'i Seçmelisiniz?</h2>
+            <p class="text-secondary lead">Fark yaratan eğitim yaklaşımımızla çocuğunuzun geleceğini şekillendiriyoruz.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <article class="p-4 bg-white shadow-custom border-start border-5 border-accent rounded-3 h-100 elevate-on-hover">
+                    <i class="fas fa-flask fa-3x text-accent mb-3" aria-hidden="true"></i>
+                    <h5 class="fw-bold text-dark">Uygulamalı Proje Garantisi</h5>
+                    <p class="text-secondary small mb-0">Öğrenilen her kavram, gerçek dünya simülasyonları ve donanım projeleriyle pekiştirilir.</p>
+                </article>
+            </div>
+
+            <div class="col-lg-4">
+                <article class="p-4 bg-white shadow-custom border-start border-5 border-accent rounded-3 h-100 elevate-on-hover">
+                    <i class="fas fa-user-tie fa-3x text-dark mb-3" aria-hidden="true"></i>
+                    <h5 class="fw-bold text-dark">Sektör Uzmanlarından Mentorluk</h5>
+                    <p class="text-secondary small mb-0">Eğitmenlerimiz aktif mühendislerdir; en güncel bilgi doğrudan kaynağından gelir.</p>
+                </article>
+            </div>
+
+            <div class="col-lg-4">
+                <article class="p-4 bg-white shadow-custom border-start border-5 border-accent rounded-3 h-100 elevate-on-hover">
+                    <i class="fas fa-robot fa-3x text-accent mb-3" aria-hidden="true"></i>
+                    <h5 class="fw-bold text-dark">Geleceğin Teknolojileri</h5>
+                    <p class="text-secondary small mb-0">ROS, ML/CV, IoT gibi niş alanlara erken yaşta giriş imkanı.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#iletisim" class="btn btn-outline-accent btn-lg">Ücretsiz Bilgi Görüşmesi Ayarlayın</a>
+        </div>
+    </section>
+
+    <!-- KURSLAR -->
+    <section id="kurslar" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-6 mb-2">Seçkin Eğitim Modülleri</h2>
+            <p class="text-muted lead">Çok katmanlı, ustalık seviyesinde uzmanlık programları.</p>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-custom elevate-on-hover card-cta">
+                    <div class="card-body p-4">
+                        <i class="fas fa-code fa-3x mb-3 text-accent icon-glow" aria-hidden="true"></i>
+                        <h5 class="card-title fw-bold text-dark">Mimar Modülü (8-10 Yaş)</h5>
+                        <p class="card-text text-secondary">Mantık ve temel algoritma tasarımı. Proje: Akıllı Ev Simülasyonu.</p>
+                        <hr class="text-muted">
+                        <ul class="list-unstyled small text-start">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Blok Programlama (Advanced)</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Yaratıcı Problem Çözme</li>
+                        </ul>
+                        <button class="btn btn-outline-dark w-100 mt-3 hero-cta-btn" data-bs-toggle="modal" data-bs-target="#fiyatModal">Dahil Ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-custom elevate-on-hover card-cta">
+                    <div class="card-body p-4">
+                        <i class="fas fa-cogs fa-3x mb-3 text-dark icon-glow" aria-hidden="true"></i>
+                        <h5 class="card-title fw-bold text-dark">Mühendis Modülü (11-13 Yaş)</h5>
+                        <p class="card-text text-secondary">Mikrodenetleyici programlama ve Endüstri 4.0 temelleri (Arduino/Python).</p>
+                        <hr class="text-muted">
+                        <ul class="list-unstyled small text-start">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Fiziksel Programlama</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Temel Elektronik Okuryazarlığı</li>
+                        </ul>
+                        <button class="btn btn-outline-dark w-100 mt-3 hero-cta-btn" data-bs-toggle="modal" data-bs-target="#fiyatModal">Dahil Ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-custom elevate-on-hover card-cta">
+                    <div class="card-body p-4">
+                        <i class="fas fa-robot fa-3x mb-3 text-accent icon-glow" aria-hidden="true"></i>
+                        <h5 class="card-title fw-bold text-dark">Elite AI Modülü (14-16 Yaş)</h5>
+                        <p class="card-text text-secondary">Görüntü işleme, Makine Öğrenimi ve Gerçek zamanlı AI projeleri.</p>
+                        <hr class="text-muted">
+                        <ul class="list-unstyled small text-start">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Veri Analizi ve Python</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Neural Network Giriş</li>
+                        </ul>
+                         <button class="btn btn-outline-dark w-100 mt-3 hero-cta-btn" data-bs-toggle="modal" data-bs-target="#fiyatModal">Dahil Ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KULLANICI YORUMLARI -->
+<section id="yorumlar" class="container py-5">
+    <h2 class="text-center mb-5">Kullanıcı Yorumları</h2>
+    
+    <div class="row">
+        <!-- Yorum 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-custom p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <h5 class="mb-1">Ahmet Yılmaz</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-muted">"CodeElite, hem akademik hem de pratik beceriler kazandıran harika bir eğitim sunuyor. Gerçek dünya projeleriyle öğrendiklerimi pekiştirebiliyorum!"</p>
+            </div>
+        </div>
+        
+        <!-- Yorum 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-custom p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <h5 class="mb-1">Merve Korkmaz</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-muted">"Gerçekten harika bir eğitim! Eğitmenler alanında uzman ve her adımda bize rehberlik ediyorlar. Çok faydalı bir eğitim aldım."</p>
+            </div>
+        </div>
+
+        <!-- Yorum 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-custom p-4">
+                <div class="d-flex align-items-center mb-3">
+                   
+                    <div>
+                        <h5 class="mb-1">Mehmet Özdemir</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-muted">"İçerik gerçekten kapsamlı ve her modül çok öğretici. Ancak bazı derslerin temposu biraz daha yavaş olabilirdi."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+    </section>
+
+    <!-- AVANTAJLAR -->
+    <section id="avantajlar" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4 text-accent">Geleceğe Yatırım Yapın.</h2>
+                    <p class="lead text-light-subtle">
+                        Sadece müfredatın derinliği değil; mentorluk, uluslararası projeler ve kariyer rotası desteği sunuyoruz.
+                    </p>
+                    <div class="feature-list mt-4">
+                        <div class="d-flex mb-3 p-2 bg-dark-light rounded">
+                            <i class="fas fa-award fa-2x text-accent me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold text-white">Uluslararası Akreditasyon</h6>
+                                <p class="small text-light-subtle mb-0">Programımız global teknoloji otoriteleri tarafından tanınmaktadır.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3 p-2 bg-dark-light rounded">
+                            <i class="fas fa-users-cog fa-2x text-white me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold text-white">Birebir Mentor</h6>
+                                <p class="small text-light-subtle mb-0">Her öğrenciye atanmış bir Yazılım Mühendisi mentoru.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="col-lg-6">
+    <div class="bg-black p-5 rounded-3 shadow-custom text-center border border-accent">
+        <img src="assets/basari.jpg"
+             alt="Öğrenci Başarı Grafiği"
+             class="img-fluid rounded shadow-custom">
+
+        <p class="mt-3 text-secondary">Öğrenci Başarı Grafiği</p>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="harita-kapsayici">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.5206417438085!2d32.023309375388955!3d36.54155752108314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dc9857742cc0f9%3A0x5a15dc84e2ad1d60!2sAlanya%20Mesleki%20ve%20Teknik%20Anadolu%20Lisesi!5e0!3m2!1str!2str!4v1765542234759!5m2!1str!2str" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+    <!-- ILETISIM -->
+    <section id="iletisim" class="py-5 bg-light-gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="p-5 bg-white shadow-lg rounded-3 border-top border-5 border-accent-dark elevate-on-hover">
+                        <h3 class="fw-bold mb-2 text-center">Şimdi Başvurun, Farkı Hissedin.</h3>
+                        <p class="text-secondary mb-4 text-center">Sınırlı kontenjanlar için ön kayıt formunu doldurun.</p>
+
+                        <form id="basvuruForm" novalidate>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="veliAd" class="form-label small fw-bold text-dark">Velinin Adı Soyadı</label>
+                                    <input id="veliAd" name="veliAd" type="text" class="form-control form-control-lg rounded-pill" placeholder="Ad Soyad" required>
+                                    <div class="invalid-feedback">Lütfen ad soyad girin.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label small fw-bold text-dark">E-posta Adresi</label>
+                                    <input id="email" name="email" type="email" class="form-control form-control-lg rounded-pill" placeholder="email@ornek.com" required>
+                                    <div class="invalid-feedback">Geçerli bir e-posta adresi girin.</div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="yas" class="form-label small fw-bold text-dark">Öğrenci Yaşı</label>
+                                    <select id="yas" name="yas" class="form-select form-select-lg rounded-pill" required>
+                                        <option value="" selected>Lütfen Yaş Seçin</option>
+                                        <option value="8-10">8-10 Yaş (Mimar)</option>
+                                        <option value="11-13">11-13 Yaş (Mühendis)</option>
+                                        <option value="14-16">14-16 Yaş (Elite AI)</option>
+                                    </select>
+                                    <div class="invalid-feedback">Lütfen bir yaş aralığı seçin.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="telefon" class="form-label small fw-bold text-dark">Telefon Numarası</label>
+                                    <input id="telefon" name="telefon" type="tel" class="form-control form-control-lg rounded-pill" placeholder="(5XX) XXX XX XX" pattern="^\(?5\d{2}\)?\s?\d{3}\s?\d{2}\s?\d{2}$" required>
+                                    <div class="invalid-feedback">Geçerli bir telefon girin (5XX...).</div>
+                                </div>
+                            </div>
+
+                            <div class="d-grid mt-4">
+                                <button type="submit" class="btn btn-accent btn-lg submit-effect pulse-effect">Ön Başvuru Yapın</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-accent fw-bold"><i class="fas fa-terminal me-2"></i>CodeElite</h5>
+                    <p class="small text-secondary">Elit seviyede kodlama ve robotik eğitimi, gelecek liderlerini yetiştiriyoruz.</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>Hızlı Erişim</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#nedenbiz" class="text-secondary text-decoration-none transition-link">Neden Biz?</a></li>
+                        <li><a href="#avantajlar" class="text-secondary text-decoration-none transition-link">Elite Farkı</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none transition-link">Gizlilik</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>Bize Ulaşın</h5>
+                    <p class="small text-secondary mb-1"><i class="fas fa-map-marker-alt me-2 text-accent"></i> Global Online Erişim</p>
+                    <p class="small text-secondary"><i class="fas fa-phone me-2 text-accent"></i> +90 555 123 45 67</p>
+                </div>
+            </div>
+
+
+            <hr class="border-secondary opacity-50">
+
+            <div class="text-center small text-secondary">&copy; 2025 CodeElite. Tüm hakları saklıdır.</div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="fiyatModal" tabindex="-1" aria-hidden="true" aria-labelledby="fiyatModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-white">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold text-accent" id="fiyatModalLabel">Elite Erişim Fırsatı</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-gem fa-4x text-accent mb-3" aria-hidden="true"></i>
+                    <p class="lead text-secondary">Sınırlı sayıdaki yerler için detaylı fiyatlandırma ve burs olanakları hakkında bilgi almak ister misiniz?</p>
+                </div>
+                <div class="modal-footer border-top-0 justify-content-center">
+                    <button type="button" class="btn btn-secondary hero-cta-btn" data-bs-dismiss="modal">Kapat</button>
+                    <a href="#iletisim" class="btn btn-accent hero-cta-btn" onclick="bootstrap.Modal.getInstance(document.getElementById('fiyatModal')).hide()">Hemen Bilgi Alın</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <script>
+        // Initialize ScrollSpy robustly (works if JS loaded late)
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof bootstrap !== 'undefined') {
+                new bootstrap.ScrollSpy(document.body, { target: '#mainNav', offset: 120 });
+            }
+
+            // Basic form validation
+            (function () {
+                var form = document.getElementById('basvuruForm');
+                if (!form) return;
+                form.addEventListener('submit', function (e) {
+                    if (!form.checkValidity()) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    } else {
+                        // Demo: frontend-only. Replace with real submission if needed.
+                        e.preventDefault();
+                        alert('Başvurunuz alındı — bizimle iletişime geçilecektir.');
+                        form.reset();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            })();
+        });
+    </script>
+</body>
+</html>
